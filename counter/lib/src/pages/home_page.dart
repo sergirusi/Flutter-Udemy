@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-
   int counter = 0;
 
-  final tabsTextStyle = new TextStyle(
-    fontSize: 25.0
-  );
+  final tabsTextStyle = new TextStyle(fontSize: 25.0);
 
-  final counterTextStyle = new TextStyle(
-    fontSize: 20.0
-  );
+  final counterTextStyle = new TextStyle(fontSize: 20.0);
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +27,8 @@ class HomePage extends StatelessWidget {
             )
           ],
           mainAxisAlignment: MainAxisAlignment.center,
-        )));
+        )),
+        floatingActionButton: FloatingActionButton(onPressed: () => this.counter++, child: Icon(Icons.add),),);
   }
+
 }
